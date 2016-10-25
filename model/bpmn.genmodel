@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="" modelDirectory="/bpmn/src" modelPluginID="bpmn"
+    modelName="Bpmn" importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0"
+    copyrightFields="false">
+  <foreignModel>bpmn.emf</foreignModel>
+  <genPackages prefix="Bpmn" disposableProviderFactory="true" ecorePackage="bpmn.ecore#/">
+    <genClasses ecoreClass="bpmn.ecore#//BPMNDiagram">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bpmn.ecore#//BPMNDiagram/elements"/>
+    </genClasses>
+    <genClasses ecoreClass="bpmn.ecore#//Element">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bpmn.ecore#//Element/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="bpmn.ecore#//Partition"/>
+    <genClasses ecoreClass="bpmn.ecore#//Lane">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bpmn.ecore#//Lane/flowControllers"/>
+    </genClasses>
+    <genClasses ecoreClass="bpmn.ecore#//ParticipantPool">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bpmn.ecore#//ParticipantPool/lanes"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="bpmn.ecore#//Connector">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bpmn.ecore#//Connector/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bpmn.ecore#//Connector/target"/>
+    </genClasses>
+    <genClasses ecoreClass="bpmn.ecore#//MessageFlow"/>
+    <genClasses image="false" ecoreClass="bpmn.ecore#//FlowController"/>
+    <genClasses image="false" ecoreClass="bpmn.ecore#//Gateway"/>
+    <genClasses ecoreClass="bpmn.ecore#//InclusiveGateway"/>
+    <genClasses ecoreClass="bpmn.ecore#//ParallelGateway"/>
+    <genClasses ecoreClass="bpmn.ecore#//StartEvent"/>
+    <genClasses ecoreClass="bpmn.ecore#//EndEvent"/>
+    <genClasses ecoreClass="bpmn.ecore#//Task"/>
+  </genPackages>
+</genmodel:GenModel>

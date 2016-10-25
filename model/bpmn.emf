@@ -1,0 +1,68 @@
+@gmf
+@namespace(uri="http://www.example.org/bpmn", prefix="bpmn")
+package bpmn;
+
+@gmf.diagram(model.extension="bpmn", diagram.extension="bpmn_diagram")
+class BPMNDiagram {
+  val Element[*] elements;
+}
+
+class Element {
+  attr String name;
+}
+
+@gmf.node(label="name", label.icon="false")
+abstract class Partition extends Element {
+}
+
+class Lane extends Partition {
+
+  @gmf.compartment
+  val FlowController[*] flowControllers;
+}
+
+class ParticipantPool extends Partition {
+
+  @gmf.compartment
+  val Lane[*] lanes;
+}
+
+@gmf.link(label="name", source="source", target="target", border.style="solid", target.decoration="arrow", width="1", tool.small.bundle="bpmn.edit", tool.small.path="/icons/full/obj16/MessageFlow.gif")
+abstract class Connector extends Element {
+  ref FlowController source;
+  ref FlowController target;
+}
+
+@gmf.link(tool.name="Message Flow")
+class MessageFlow extends Connector {
+}
+
+@gmf.node(label="name")
+abstract class FlowController extends Element {
+
+}
+
+@gmf.node
+abstract class Gateway extends FlowController {
+}
+
+@gmf.node(tool.name="Inclusive Gateway", tool.small.bundle="bpmn.edit", svg.uri="platform:/plugin/bpmn/icons/full/obj16/inclusive_gateway.svg", size="60,60")
+class InclusiveGateway extends Gateway {
+}
+
+@gmf.node(tool.name="Parallel Gateway", svg.uri="platform:/plugin/bpmn/icons/full/obj16/pararell_gateway.svg", size="60,60")
+class ParallelGateway extends Gateway {
+}
+
+@gmf.node(label.icon="false", tool.name="Start Event", resizable="false", svg.uri="platform:/plugin/bpmn/icons/full/obj16/initial_state.svg" , margin="2", size="40,40")
+class StartEvent extends FlowController {
+}
+
+@gmf.node(label.icon="false", tool.name="End Event", resizable="false", svg.uri="platform:/plugin/bpmn/icons/full/obj16/final_state.svg", size="40,40")
+class EndEvent extends FlowController {
+}
+
+@gmf.node(label.icon="false", tool.name="Task", resizable="true", margin="2", figure="rounded", color="255,239,213")
+class Task extends FlowController {
+}
+

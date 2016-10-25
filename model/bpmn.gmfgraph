@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="bpmn">
+  <figures name="Default">
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="MessageFlowFigureTargetDecoration"/>
+    <descriptors name="LaneFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="LaneFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="LaneLabelFigure" text="Lane">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="LaneFlowControllersCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureLaneLabelFigure" figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+      <accessors accessor="getLaneFlowControllersCompartmentFigure" figure="//@figures.0/@descriptors.0/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="ParticipantPoolFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ParticipantPoolFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="ParticipantPoolLabelFigure" text="ParticipantPool">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="ParticipantPoolLanesCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureParticipantPoolLabelFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
+      <accessors accessor="getParticipantPoolLanesCompartmentFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="InclusiveGatewayFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="InclusiveGatewayFigure">
+        <preferredSize dx="60" dy="60"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="InclusiveGatewayLabelFigure" text="InclusiveGateway"/>
+      </actualFigure>
+      <accessors accessor="getFigureInclusiveGatewayLabelFigure" figure="//@figures.0/@descriptors.2/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ParallelGatewayFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ParallelGatewayFigure">
+        <preferredSize dx="60" dy="60"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="ParallelGatewayLabelFigure" text="ParallelGateway"/>
+      </actualFigure>
+      <accessors accessor="getFigureParallelGatewayLabelFigure" figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="StartEventFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="StartEventFigure">
+        <preferredSize dx="40" dy="40"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="2" left="2" bottom="2" right="2"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="StartEventLabelFigure" text="StartEvent"/>
+      </actualFigure>
+      <accessors accessor="getFigureStartEventLabelFigure" figure="//@figures.0/@descriptors.4/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="EndEventFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="EndEventFigure">
+        <preferredSize dx="40" dy="40"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="EndEventLabelFigure" text="EndEvent"/>
+      </actualFigure>
+      <accessors accessor="getFigureEndEventLabelFigure" figure="//@figures.0/@descriptors.5/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="TaskFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="TaskFigure">
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="255" green="239" blue="213"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="2" left="2" bottom="2" right="2"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="TaskLabelFigure" text="Task"/>
+      </actualFigure>
+      <accessors accessor="getFigureTaskLabelFigure" figure="//@figures.0/@descriptors.6/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="MessageFlowFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="MessageFlowFigure" targetDecoration="//@figures.0/@figures.0"/>
+    </descriptors>
+    <descriptors name="MessageFlowLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="MessageFlowLabelLabel" text="MessageFlow"/>
+    </descriptors>
+  </figures>
+  <nodes name="Lane" figure="LaneFigure"/>
+  <nodes name="ParticipantPool" figure="ParticipantPoolFigure"/>
+  <nodes name="InclusiveGateway" figure="InclusiveGatewayFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="60" dy="60"/>
+    </facets>
+  </nodes>
+  <nodes name="ParallelGateway" figure="ParallelGatewayFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="60" dy="60"/>
+    </facets>
+  </nodes>
+  <nodes name="StartEvent" figure="StartEventFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="40" dy="40"/>
+    </facets>
+  </nodes>
+  <nodes name="EndEvent" figure="EndEventFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="40" dy="40"/>
+    </facets>
+  </nodes>
+  <nodes name="Task" figure="TaskFigure"/>
+  <connections name="MessageFlow" figure="MessageFlowFigure"/>
+  <compartments name="LaneFlowControllersCompartment" figure="LaneFigure" collapsible="true" accessor="//@figures.0/@descriptors.0/@accessors.1"/>
+  <compartments name="ParticipantPoolLanesCompartment" figure="ParticipantPoolFigure" collapsible="true" accessor="//@figures.0/@descriptors.1/@accessors.1"/>
+  <labels name="LaneLabel" figure="LaneFigure" elementIcon="false" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="ParticipantPoolLabel" figure="ParticipantPoolFigure" elementIcon="false" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
+  <labels name="InclusiveGatewayLabel" figure="InclusiveGatewayFigure" accessor="//@figures.0/@descriptors.2/@accessors.0"/>
+  <labels name="ParallelGatewayLabel" figure="ParallelGatewayFigure" accessor="//@figures.0/@descriptors.3/@accessors.0"/>
+  <labels name="StartEventLabel" figure="StartEventFigure" elementIcon="false" accessor="//@figures.0/@descriptors.4/@accessors.0"/>
+  <labels name="EndEventLabel" figure="EndEventFigure" elementIcon="false" accessor="//@figures.0/@descriptors.5/@accessors.0"/>
+  <labels name="TaskLabel" figure="TaskFigure" elementIcon="false" accessor="//@figures.0/@descriptors.6/@accessors.0"/>
+  <labels name="MessageFlowLabel" figure="MessageFlowLabelFigure" elementIcon="false"/>
+</gmfgraph:Canvas>
