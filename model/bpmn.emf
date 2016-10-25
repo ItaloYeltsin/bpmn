@@ -46,19 +46,19 @@ abstract class FlowController extends Element {
 abstract class Gateway extends FlowController {
 }
 
-@gmf.node(tool.name="Inclusive Gateway", tool.small.bundle="bpmn.edit", svg.uri="platform:/plugin/bpmn/icons/full/obj16/inclusive_gateway.svg", size="60,60")
+@gmf.node(tool.name="Inclusive Gateway", tool.small.bundle="bpmn.edit", figure="svg", svg.uri="platform:/plugin/bpmn/svg/inclusive_gateway.svg", size="60,60")
 class InclusiveGateway extends Gateway {
 }
 
-@gmf.node(tool.name="Parallel Gateway", svg.uri="platform:/plugin/bpmn/icons/full/obj16/pararell_gateway.svg", size="60,60")
+@gmf.node(tool.name="Parallel Gateway", figure="svg", svg.uri="platform:/plugin/bpmn/svg/pararell_gateway.svg", size="60,60")
 class ParallelGateway extends Gateway {
 }
 
-@gmf.node(label.icon="false", tool.name="Start Event", resizable="false", svg.uri="platform:/plugin/bpmn/icons/full/obj16/initial_state.svg" , margin="2", size="40,40")
+@gmf.node(label.icon="false", tool.name="Start Event", resizable="false", figure="svg", svg.uri="platform:/plugin/bpmn/svg/initial_state.svg" , margin="2", size="40,40")
 class StartEvent extends FlowController {
 }
 
-@gmf.node(label.icon="false", tool.name="End Event", resizable="false", svg.uri="platform:/plugin/bpmn/icons/full/obj16/final_state.svg", size="40,40")
+@gmf.node(label.icon="false", tool.name="End Event", resizable="false", figure="svg", svg.uri="platform:/plugin/bpmn/svg/final_state.svg", size="40,40")
 class EndEvent extends FlowController {
 }
 

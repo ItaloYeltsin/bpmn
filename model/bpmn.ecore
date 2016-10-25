@@ -62,14 +62,16 @@
     <eAnnotations source="gmf.node">
       <details key="tool.name" value="Inclusive Gateway"/>
       <details key="tool.small.bundle" value="bpmn.edit"/>
-      <details key="svg.uri" value="platform:/plugin/bpmn/icons/full/obj16/inclusive_gateway.svg"/>
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/bpmn/svg/inclusive_gateway.svg"/>
       <details key="size" value="60,60"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ParallelGateway" eSuperTypes="#//Gateway">
     <eAnnotations source="gmf.node">
       <details key="tool.name" value="Parallel Gateway"/>
-      <details key="svg.uri" value="platform:/plugin/bpmn/icons/full/obj16/pararell_gateway.svg"/>
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/bpmn/svg/pararell_gateway.svg"/>
       <details key="size" value="60,60"/>
     </eAnnotations>
   </eClassifiers>
@@ -78,7 +80,8 @@
       <details key="label.icon" value="false"/>
       <details key="tool.name" value="Start Event"/>
       <details key="resizable" value="false"/>
-      <details key="svg.uri" value="platform:/plugin/bpmn/icons/full/obj16/initial_state.svg"/>
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/bpmn/svg/initial_state.svg"/>
       <details key="margin" value="2"/>
       <details key="size" value="40,40"/>
     </eAnnotations>
@@ -88,7 +91,8 @@
       <details key="label.icon" value="false"/>
       <details key="tool.name" value="End Event"/>
       <details key="resizable" value="false"/>
-      <details key="svg.uri" value="platform:/plugin/bpmn/icons/full/obj16/final_state.svg"/>
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/bpmn/svg/final_state.svg"/>
       <details key="size" value="40,40"/>
     </eAnnotations>
   </eClassifiers>

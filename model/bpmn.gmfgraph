@@ -29,7 +29,7 @@
       <accessors accessor="getParticipantPoolLanesCompartmentFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.1"/>
     </descriptors>
     <descriptors name="InclusiveGatewayFigure">
-      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="InclusiveGatewayFigure">
+      <actualFigure xsi:type="gmfgraph:SVGFigure" name="InclusiveGatewayFigure" documentURI="platform:/plugin/bpmn/svg/inclusive_gateway.svg">
         <preferredSize dx="60" dy="60"/>
         <border xsi:type="gmfgraph:MarginBorder">
           <insets top="5" left="5" bottom="5" right="5"/>
@@ -39,7 +39,7 @@
       <accessors accessor="getFigureInclusiveGatewayLabelFigure" figure="//@figures.0/@descriptors.2/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors name="ParallelGatewayFigure">
-      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ParallelGatewayFigure">
+      <actualFigure xsi:type="gmfgraph:SVGFigure" name="ParallelGatewayFigure" documentURI="platform:/plugin/bpmn/svg/pararell_gateway.svg">
         <preferredSize dx="60" dy="60"/>
         <border xsi:type="gmfgraph:MarginBorder">
           <insets top="5" left="5" bottom="5" right="5"/>
@@ -49,7 +49,7 @@
       <accessors accessor="getFigureParallelGatewayLabelFigure" figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors name="StartEventFigure">
-      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="StartEventFigure">
+      <actualFigure xsi:type="gmfgraph:SVGFigure" name="StartEventFigure" documentURI="platform:/plugin/bpmn/svg/initial_state.svg">
         <preferredSize dx="40" dy="40"/>
         <border xsi:type="gmfgraph:MarginBorder">
           <insets top="2" left="2" bottom="2" right="2"/>
@@ -59,7 +59,7 @@
       <accessors accessor="getFigureStartEventLabelFigure" figure="//@figures.0/@descriptors.4/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors name="EndEventFigure">
-      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="EndEventFigure">
+      <actualFigure xsi:type="gmfgraph:SVGFigure" name="EndEventFigure" documentURI="platform:/plugin/bpmn/svg/final_state.svg">
         <preferredSize dx="40" dy="40"/>
         <border xsi:type="gmfgraph:MarginBorder">
           <insets top="5" left="5" bottom="5" right="5"/>
